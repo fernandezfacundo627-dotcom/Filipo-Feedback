@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #161212;
+  --color-graphite: #221b1b;
+  --color-coal: #100c0c;
+  --color-smoke: #332727;
+
+  --color-filipo-primary: #4A3525;
+  --color-filipo-secondary: #D9C5B2;
+  --color-filipo-accent: #D97736;
+  --color-filipo-dark: #161212;
+  --color-filipo-ink: #161212;
+  --color-filipo-graphite: #221b1b;
+  --color-filipo-coal: #100c0c;
+  --color-filipo-smoke: #332727;
+}
+
+/* Scrollbar usando los tokens de la paleta */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-coal);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-smoke);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-coal);
+}
