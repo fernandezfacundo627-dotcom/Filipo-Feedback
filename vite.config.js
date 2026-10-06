@@ -5,6 +5,9 @@ import { viteSingleFile } from 'vite-plugin-singlefile'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), viteSingleFile()],
+  build: {
+    reportCompressedSize: false,
+  },
   server: {
     host: true,
     port: 5173,
